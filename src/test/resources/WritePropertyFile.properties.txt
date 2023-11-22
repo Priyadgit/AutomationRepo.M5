@@ -1,0 +1,4 @@
+#write into file created
+#Wed Oct 04 13:50:44 IST 2023
+password=admin
+username=admin
