@@ -22,7 +22,6 @@ public class ListernersImplementationClass implements ITestListener
 {
 	ExtentReports report ;
 	ExtentTest test ;
-	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		String methodName = result.getMethod().getMethodName();
@@ -30,7 +29,6 @@ public class ListernersImplementationClass implements ITestListener
 		test=report.createTest(methodName);
 	}
 
-	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		String methodName = result.getMethod().getMethodName();
@@ -38,7 +36,6 @@ public class ListernersImplementationClass implements ITestListener
 		test.log(Status.PASS, methodName+"-----Test Pass------");
 	}
 
-	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		String methodName = result.getMethod().getMethodName();
@@ -61,7 +58,6 @@ public class ListernersImplementationClass implements ITestListener
 		} 
 	}
 
-	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		String methodName = result.getMethod().getMethodName();
@@ -71,19 +67,16 @@ public class ListernersImplementationClass implements ITestListener
 		test.log(Status.INFO, result.getThrowable());
 	}
 
-	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
 		System.out.println("Suite Execution Started");
@@ -107,7 +100,6 @@ public class ListernersImplementationClass implements ITestListener
 		
 	}
 
-	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		System.out.println("Suite Execution Finished");
