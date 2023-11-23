@@ -105,6 +105,7 @@
 					<configuration> 
 						<suiteXmlFiles> 
 							<suiteXmlFile>testngSmokeSuite.xml</suiteXmlFile>
+							<suiteXmlFile>testngBatchExeSample.xml</suiteXmlFile>
 						</suiteXmlFiles> 
 					</configuration> 
 					</plugin> 
